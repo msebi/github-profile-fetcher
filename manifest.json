@@ -1,0 +1,27 @@
+{
+  "name": "Get Github User Profile Info",
+  "version": "1.0",
+  "description": "Fetches profile of a github user (if publicly available)",
+  "permissions": ["activeTab", "declarativeContent", "storage", "tabs", "https://github.com/"],
+  "options_page": "options_git_profile_fetcher.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/get_github_profile16.png",
+      "32": "images/get_github_profile32.png",
+      "48": "images/get_github_profile48.png",
+      "128": "images/get_github_profile128.png"
+    }
+  },
+  "icons": {
+    "16": "images/get_github_profile16.png",
+    "32": "images/get_github_profile32.png",
+    "48": "images/get_github_profile48.png",
+    "128": "images/get_github_profile128.png"
+  },
+  "manifest_version": 2
+}

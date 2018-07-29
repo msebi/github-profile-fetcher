@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Git profile fetcher</title>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+	<link href="./bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<form class="form-horizontal" action=" " method="post"  id="reg_form">
+    <fieldset>
+      
+      <!-- Form Name -->
+      <legend> Personal Information </legend>
+    
+      <!-- Text input-->
+      <!--
+      <div class="form-group">
+        <label class="col-md-4 control-label">First Name</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      -->
+      <!-- Text input-->
+      <!--
+      <div class="form-group">
+        <label class="col-md-4 control-label" >Last Name</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      -->
+    
+      <!-- Text input-->
+      <!--
+      <div class="form-group">
+        <label class="col-md-4 control-label">Phone #</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+      -->
+      <!-- Text input-->
+      <!--
+      <div class="form-group">
+        <label class="col-md-4 control-label">Address</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="address" placeholder="Address" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+      -->
+      <!-- Text input-->
+      <!--
+      <div class="form-group">
+        <label class="col-md-4 control-label">City</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="city" placeholder="city" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      -->
+      <!-- Select Basic -->
+      <!--
+      <div class="form-group">
+        <label class="col-md-4 control-label">State</label>
+        <div class="col-md-6 selectContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="state" class="form-control selectpicker" >
+              <option value=" " >Please select your state</option>
+              <option>Alabama</option>
+              <option>Alaska</option>
+              <option >Arizona</option>
+              <option >Arkansas</option>
+              <option >California</option>
+              <option >Colorado</option>
+              <option >Connecticut</option>
+              <option >Delaware</option>
+              <option >District of Columbia</option>
+              <option> Florida</option>
+              <option >Georgia</option>
+              <option >Hawaii</option>
+              <option >daho</option>
+              <option >Illinois</option>
+              <option >Indiana</option>
+              <option >Iowa</option>
+              <option> Kansas</option>
+              <option >Kentucky</option>
+              <option >Louisiana</option>
+              <option>Maine</option>
+              <option >Maryland</option>
+              <option> Mass</option>
+              <option >Michigan</option>
+              <option >Minnesota</option>
+              <option>Mississippi</option>
+              <option>Missouri</option>
+              <option>Montana</option>
+              <option>Nebraska</option>
+              <option>Nevada</option>
+              <option>New Hampshire</option>
+              <option>New Jersey</option>
+              <option>New Mexico</option>
+              <option>New York</option>
+              <option>North Carolina</option>
+              <option>North Dakota</option>
+              <option>Ohio</option>
+              <option>Oklahoma</option>
+              <option>Oregon</option>
+              <option>Pennsylvania</option>
+              <option>Rhode Island</option>
+              <option>South Carolina</option>
+              <option>South Dakota</option>
+              <option>Tennessee</option>
+              <option>Texas</option>
+              <option> Uttah</option>
+              <option>Vermont</option>
+              <option>Virginia</option>
+              <option >Washington</option>
+              <option >West Virginia</option>
+              <option>Wisconsin</option>
+              <option >Wyoming</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      -->
+      <!-- Text input-->
+      <!--
+      <div class="form-group">
+        <label class="col-md-4 control-label">Zip Code</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      -->
+        <!-- Text area -->
+      <!--
+      <div class="form-group">
+        <label class="col-md-4 control-label">About </label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <textarea class="form-control" name="comment" placeholder="About "></textarea>
+          </div>
+        </div>
+      </div>
+      -->
+     
+		<!--
+		</fieldset>
+			<legend> Account information </legend>
+        <fieldset>
+		-->
+        <!-- Text input-->
+	  <!--
+      <div class="form-group">
+        <label class="col-md-4 control-label">E-Mail</label>
+        <div class="col-md-6  inputGroupContainer">
+          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+      -->
+		<!--
+        <div class="form-group has-feedback">
+            <label for="password"  class="col-md-4 control-label">
+                    Password
+                </label>
+                <div class="col-md-6  inputGroupContainer">
+                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input class="form-control" id="userPw" type="password" placeholder="password" 
+                       name="password" data-minLength="5"
+                       data-error="some error"
+                       required/>
+                <span class="glyphicon form-control-feedback"></span>
+                <span class="help-block with-errors"></span>
+                </div>
+             </div>
+        </div>
+		-->
+     
+		<!--
+        <div class="form-group has-feedback">
+            <label for="confirmPassword"  class="col-md-4 control-label">
+                   Confirm Password
+                </label>
+                 <div class="col-md-6  inputGroupContainer">
+                <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input class="form-control {$borderColor}" id="userPw2" type="password" placeholder="Confirm password" 
+                       name="confirmPassword" data-match="#confirmPassword" data-minLength="5"
+                       data-match-error="some error 2"
+                       required/>
+                <span class="glyphicon form-control-feedback"></span>
+                <span class="help-block with-errors"></span>
+      			 </div>
+             </div>
+        </div>
+		-->
+  
+	<table class="table" id="exampleTable">
+	  <thead class="thead-dark">
+		<tr>
+		  <th scope="col">#</th>
+		  <th scope="col">First</th>
+		  <th scope="col">Last</th>
+		  <th scope="col">Handle</th>
+		</tr>
+	  </thead>
+	  <tbody id="exampleTableBody">
+		<tr>
+		  <th scope="row">1</th>
+		  <td><a target="_blank" rel="noopener noreferrer" href="https://www.google.com"> Mark</a></td>
+		  <td>Otto</td>
+		  <td>@mdo</td>
+		</tr>
+		<tr>
+		  <th scope="row">2</th>
+		  <td>Jacob</td>
+		  <td>Thornton</td>
+		  <td>@fat</td>
+		</tr>
+		<tr>
+		  <th scope="row">3</th>
+		  <td>Larry</td>
+		  <td>the Bird</td>
+		  <td>@twitter</td>
+		</tr>
+	  </tbody>
+	</table>
+
+	<table class="table">
+	  <thead class="thead-light">
+		<tr>
+		  <th scope="col">#</th>
+		  <th scope="col">First</th>
+		  <th scope="col">Last</th>
+		  <th scope="col">Handle</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr>
+		  <th scope="row">1</th>
+		  <td>Mark</td>
+		  <td>Otto</td>
+		  <td>@mdo</td>
+		</tr>
+		<tr>
+		  <th scope="row">2</th>
+		  <td>Jacob</td>
+		  <td>Thornton</td>
+		  <td>@fat</td>
+		</tr>
+		<tr>
+		  <th scope="row">3</th>
+		  <td>Larry</td>
+		  <td>the Bird</td>
+		  <td>@twitter</td>
+		</tr>
+	  </tbody>
+	</table>
+	   
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+    </fieldset>
+    </form>
+	
+	<script type="text/javascript">
+	
+	var url = "https://github.com/msebi/cheat-engine-6.6";
+	var repoName = url.substr(url.lastIndexOf('/') + 1);
+	var repo = ['<tr><td>', '<a target="_blank" rel="noopener noreferrer" href="', url, '">', repoName, '</a>', '</td>/tr>'];
+	// alert(repo.join(''));
+   $('#exampleTableBody').append(repo.join(''));
+   
+   function toArray(obj) {
+		const result = [];
+		for (const prop in obj) {
+			const value = obj[prop];
+			if (typeof value === 'object') {
+				result.push(toArray(value)); // <- recursive call
+			}
+			else {
+				result.push(value);
+			}
+		}
+		return result;
+   }
+   
+   function checkNested(obj /*, level1, level2, ... levelN*/) {
+	  var args = Array.prototype.slice.call(arguments, 1);
+	  
+	  for (var j = 0; j < args.length; j++) {
+		if (!obj || !obj.hasOwnProperty(args[j])) {
+		  return false;
+		}
+		obj = obj[args[j]];
+	  }
+	  return true;
+	}
+	
+	function checkNestedObject(obj, args) {
+	
+		if(args.length === 0) {
+			return true;
+		}
+		
+		for(var key in obj) {
+			if(obj.hasOwnProperty(key)) {
+				if(key === args[0]) {
+					return checkNestedObject(obj[key], args.slice(1, args.length));
+				}
+			}
+		}
+		
+		return false;
+	} 
+	
+	function checkNestedObjectFlat(obj, args) {
+		
+		for(var i = 0; i < args.length; i++) {
+			
+			if(!obj.hasOwnProperty(args[i])) {
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
+	function makeRequest(url) {
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", url, false);
+		xhr.send();
+		return xhr.responseText;
+    }
+	
+	function downloadJSONFromURL(url, fileName, contentType) {
+		content = JSON.stringify(JSON.parse(makeRequest(url)));
+		var a = document.createElement("a");
+		var file = new Blob([content], {type: contentType});
+		a.href = URL.createObjectURL(file);
+		a.download = fileName;
+		a.click();
+    }
+	
+	var test = {level1:{level2:{level3:'level3'}} };
+	var profileObj = {"id":"8002220621","type":"PushEvent","actor":{"id":35658450,"login":"ivan89el","display_login":"ivan89el","gravatar_id":"","url":"https://api.github.com/users/ivan89el","avatar_url":"https://avatars.githubusercontent.com/u/35658450?"},"repo":{"id":140281584,"name":"ivan89el/pcsx2","url":"https://api.github.com/repos/ivan89el/pcsx2"},"payload":{"push_id":2739009744,"size":1,"distinct_size":1,"ref":"refs/heads/master","head":"cd6d9afc625fc2cdce2c090a60ebe4a5add9df26","before":"cd0b80ff351d9ceffeffabde4372c359e7587d29","commits":[{"sha":"cd6d9afc625fc2cdce2c090a60ebe4a5add9df26","author":{"email":"35658450+ivan89el@users.noreply.github.com","name":"ivan89el"},"message":"Update GSHwHack.cpp","distinct":true,"url":"https://api.github.com/repos/ivan89el/pcsx2/commits/cd6d9afc625fc2cdce2c090a60ebe4a5add9df26"}]},"public":true,"created_at":"2018-07-23T07:42:42Z"};
+	var repoObj = [{"id":141961741,"node_id":"MDEwOlJlcG9zaXRvcnkxNDE5NjE3NDE=","name":"Gsdx-cutie","full_name":"ivan89el/Gsdx-cutie","owner":{"login":"ivan89el","id":35658450,"node_id":"MDQ6VXNlcjM1NjU4NDUw","avatar_url":"https://avatars3.githubusercontent.com/u/35658450?v=4","gravatar_id":"","url":"https://api.github.com/users/ivan89el","html_url":"https://github.com/ivan89el","followers_url":"https://api.github.com/users/ivan89el/followers","following_url":"https://api.github.com/users/ivan89el/following{/other_user}","gists_url":"https://api.github.com/users/ivan89el/gists{/gist_id}","starred_url":"https://api.github.com/users/ivan89el/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ivan89el/subscriptions","organizations_url":"https://api.github.com/users/ivan89el/orgs","repos_url":"https://api.github.com/users/ivan89el/repos","events_url":"https://api.github.com/users/ivan89el/events{/privacy}","received_events_url":"https://api.github.com/users/ivan89el/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/ivan89el/Gsdx-cutie","description":"pcsx2 plugin","fork":true,"url":"https://api.github.com/repos/ivan89el/Gsdx-cutie","forks_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/forks","keys_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/keys{/key_id}","collaborators_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/teams","hooks_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/hooks","issue_events_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/issues/events{/number}","events_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/events","assignees_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/assignees{/user}","branches_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/branches{/branch}","tags_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/tags","blobs_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/git/refs{/sha}","trees_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/git/trees{/sha}","statuses_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/statuses/{sha}","languages_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/languages","stargazers_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/stargazers","contributors_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/contributors","subscribers_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/subscribers","subscription_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/subscription","commits_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/commits{/sha}","git_commits_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/git/commits{/sha}","comments_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/comments{/number}","issue_comment_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/issues/comments{/number}","contents_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/contents/{+path}","compare_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/compare/{base}...{head}","merges_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/merges","archive_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/downloads","issues_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/issues{/number}","pulls_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/pulls{/number}","milestones_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/milestones{/number}","notifications_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/labels{/name}","releases_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/releases{/id}","deployments_url":"https://api.github.com/repos/ivan89el/Gsdx-cutie/deployments","created_at":"2018-07-23T04:37:32Z","updated_at":"2018-07-23T04:37:36Z","pushed_at":"2015-05-25T08:49:39Z","git_url":"git://github.com/ivan89el/Gsdx-cutie.git","ssh_url":"git@github.com:ivan89el/Gsdx-cutie.git","clone_url":"https://github.com/ivan89el/Gsdx-cutie.git","svn_url":"https://github.com/ivan89el/Gsdx-cutie","homepage":null,"size":28739,"stargazers_count":0,"watchers_count":0,"language":"C++","has_issues":false,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"master"},{"id":140281584,"node_id":"MDEwOlJlcG9zaXRvcnkxNDAyODE1ODQ=","name":"pcsx2","full_name":"ivan89el/pcsx2","owner":{"login":"ivan89el","id":35658450,"node_id":"MDQ6VXNlcjM1NjU4NDUw","avatar_url":"https://avatars3.githubusercontent.com/u/35658450?v=4","gravatar_id":"","url":"https://api.github.com/users/ivan89el","html_url":"https://github.com/ivan89el","followers_url":"https://api.github.com/users/ivan89el/followers","following_url":"https://api.github.com/users/ivan89el/following{/other_user}","gists_url":"https://api.github.com/users/ivan89el/gists{/gist_id}","starred_url":"https://api.github.com/users/ivan89el/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ivan89el/subscriptions","organizations_url":"https://api.github.com/users/ivan89el/orgs","repos_url":"https://api.github.com/users/ivan89el/repos","events_url":"https://api.github.com/users/ivan89el/events{/privacy}","received_events_url":"https://api.github.com/users/ivan89el/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/ivan89el/pcsx2","description":"PCSX2 - The Playstation 2 Emulator","fork":true,"url":"https://api.github.com/repos/ivan89el/pcsx2","forks_url":"https://api.github.com/repos/ivan89el/pcsx2/forks","keys_url":"https://api.github.com/repos/ivan89el/pcsx2/keys{/key_id}","collaborators_url":"https://api.github.com/repos/ivan89el/pcsx2/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/ivan89el/pcsx2/teams","hooks_url":"https://api.github.com/repos/ivan89el/pcsx2/hooks","issue_events_url":"https://api.github.com/repos/ivan89el/pcsx2/issues/events{/number}","events_url":"https://api.github.com/repos/ivan89el/pcsx2/events","assignees_url":"https://api.github.com/repos/ivan89el/pcsx2/assignees{/user}","branches_url":"https://api.github.com/repos/ivan89el/pcsx2/branches{/branch}","tags_url":"https://api.github.com/repos/ivan89el/pcsx2/tags","blobs_url":"https://api.github.com/repos/ivan89el/pcsx2/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/ivan89el/pcsx2/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/ivan89el/pcsx2/git/refs{/sha}","trees_url":"https://api.github.com/repos/ivan89el/pcsx2/git/trees{/sha}","statuses_url":"https://api.github.com/repos/ivan89el/pcsx2/statuses/{sha}","languages_url":"https://api.github.com/repos/ivan89el/pcsx2/languages","stargazers_url":"https://api.github.com/repos/ivan89el/pcsx2/stargazers","contributors_url":"https://api.github.com/repos/ivan89el/pcsx2/contributors","subscribers_url":"https://api.github.com/repos/ivan89el/pcsx2/subscribers","subscription_url":"https://api.github.com/repos/ivan89el/pcsx2/subscription","commits_url":"https://api.github.com/repos/ivan89el/pcsx2/commits{/sha}","git_commits_url":"https://api.github.com/repos/ivan89el/pcsx2/git/commits{/sha}","comments_url":"https://api.github.com/repos/ivan89el/pcsx2/comments{/number}","issue_comment_url":"https://api.github.com/repos/ivan89el/pcsx2/issues/comments{/number}","contents_url":"https://api.github.com/repos/ivan89el/pcsx2/contents/{+path}","compare_url":"https://api.github.com/repos/ivan89el/pcsx2/compare/{base}...{head}","merges_url":"https://api.github.com/repos/ivan89el/pcsx2/merges","archive_url":"https://api.github.com/repos/ivan89el/pcsx2/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/ivan89el/pcsx2/downloads","issues_url":"https://api.github.com/repos/ivan89el/pcsx2/issues{/number}","pulls_url":"https://api.github.com/repos/ivan89el/pcsx2/pulls{/number}","milestones_url":"https://api.github.com/repos/ivan89el/pcsx2/milestones{/number}","notifications_url":"https://api.github.com/repos/ivan89el/pcsx2/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/ivan89el/pcsx2/labels{/name}","releases_url":"https://api.github.com/repos/ivan89el/pcsx2/releases{/id}","deployments_url":"https://api.github.com/repos/ivan89el/pcsx2/deployments","created_at":"2018-07-09T12:22:49Z","updated_at":"2018-07-23T07:42:43Z","pushed_at":"2018-07-23T07:42:41Z","git_url":"git://github.com/ivan89el/pcsx2.git","ssh_url":"git@github.com:ivan89el/pcsx2.git","clone_url":"https://github.com/ivan89el/pcsx2.git","svn_url":"https://github.com/ivan89el/pcsx2","homepage":"http://pcsx2.net/","size":92906,"stargazers_count":0,"watchers_count":0,"language":"C++","has_issues":false,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"open_issues_count":0,"license":{"key":"other","name":"Other","spdx_id":null,"url":null,"node_id":"MDc6TGljZW5zZTA="},"forks":0,"open_issues":0,"watchers":0,"default_branch":"master"}];
+	var res; 
+	
+	// downloadJSONFromURL("https://api.github.com/users/ivan89el/repos", 'userRepos.txt', 'text/plain');
+
+	res = checkNestedObject(profileObj, ['payload', 'commits', '0', 'author']);
+	
+	for(var key in repoObj) {
+		if(repoObj.hasOwnProperty(key)) {
+			res = checkNestedObjectFlat(repoObj[key], ['html_url', 'description', 'clone_url', 'svn_url', 'homepage', 'svn_url', 'contributors_url']);
+		}
+	}
+   
+   $(document).ready(function() {
+    $('#reg_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            first_name: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: 'Please supply your first name'
+                    }
+                }
+            },
+			/*
+             last_name: {
+                validators: {
+                     stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your last name'
+                    }
+                }
+            },
+           
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your phone number'
+                    },
+                    phone: {
+                        country: 'US',
+                        message: 'Please supply a vaild phone number with area code'
+                    }
+                }
+            },
+            address: {
+                validators: {
+                     stringLength: {
+                        min: 8,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your street address'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                     stringLength: {
+                        min: 4,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your city'
+                    }
+                }
+            },
+            state: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your state'
+                    }
+                }
+            },
+            zip: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your zip code'
+                    },
+                    zipCode: {
+                        country: 'US',
+                        message: 'Please supply a vaild zip code'
+                    }
+                }
+            },
+		comment: {
+                validators: {
+                      stringLength: {
+                        min: 10,
+                        max: 200,
+                        message:'Please enter at least 10 characters and no more than 200'
+                    },
+                    notEmpty: {
+                        message: 'Please supply a description about yourself'
+                    }
+                    }
+                 },	
+	 email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your email address'
+                    },
+                    emailAddress: {
+                        message: 'Please supply a valid email address'
+                    }
+                }
+            },
+					
+	password: {
+            validators: {
+                identical: {
+                    field: 'confirmPassword',
+                    message: 'Confirm your password below - type same password please'
+                }
+            }
+        },
+        confirmPassword: {
+            validators: {
+                identical: {
+                    field: 'password',
+                    message: 'The password and its confirm are not the same'
+                }
+            }
+         },
+		*/	
+            
+            }
+        })
+		
+ /*	
+        .on('success.form.bv', function(e) {
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                $('#reg_form').data('bootstrapValidator').resetForm();
+
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                console.log(result);
+            }, 'json');
+        });
+		*/
+});
+
+</script>
+  </body>
+</html>
