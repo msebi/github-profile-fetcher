@@ -8,4 +8,4 @@ Clone the repository and load it into chrome (chrome://extensions/ --> Enable "D
 
 Sample:
 
-![Sample](../../images/Sample.png?raw=true "Sample")
+![Sample](../../images/example.png?raw=true "Sample")
