@@ -8,4 +8,4 @@ Clone the repository and load it into chrome (chrome://extensions/ --> Enable "D
 
 Sample:
 
-![Sample](blob/master/images/example.png?raw=true "Sample")
+![Sample](https://raw.githubusercontent.com/msebi/github-profile-fetcher/master/images/example.png)
